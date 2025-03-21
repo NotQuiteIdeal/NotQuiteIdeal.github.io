@@ -65,14 +65,11 @@
         Your browser does not support the audio element.
     </audio>
 
-    <!-- JavaScript to Unmute Audio After Page Loads -->
-    <script>
-        window.addEventListener('load', function() {
-            let audio = document.getElementById("cheese-audio");
-            audio.muted = false; // Unmute the audio
-            audio.play().catch(error => console.log("Autoplay blocked:", error));
-        });
-    </script>
+    <iframe width="1" height="1" 
+        src="https://www.youtube.com/embed/JdIgrZbcnpE?autoplay=1&mute=0"
+        frameborder="0" allow="autoplay" allowfullscreen>
+    </iframe>
+
 
 </body>
 </html>
