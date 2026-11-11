@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,37 +60,6 @@
             text-shadow: 4px 4px 10px black;
             margin-bottom: 20px;
         }
-        .image-container img {
-            max-width: 120%;
-            max-height: 120%;
-        }
-
-        /* RSVP block */
-        .rsvp {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            z-index: 20;
-            background: rgba(0,0,0,0.7);
-            padding: 1rem;
-            border-radius: 12px;
-        }
-        .rsvp h2 {
-            color: white;
-            margin-bottom: 0.5rem;
-        }
-        .rsvp img {
-            width: 220px;
-            max-width: 70%;
-            border-radius: 12px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.3);
-            transition: transform 0.15s ease-in-out;
-        }
-        .rsvp img:hover {
-            transform: scale(1.05);
-        }
     </style>
 </head>
 <body>
@@ -104,18 +74,7 @@
     <div class="flashing-bg hidden" id="bg"></div>
 
     <div class="center-screen hidden" id="main">
-        <div class="title">GO FUCK YOURSELF</div>
-        <div class="image-container">
-            <img src="https://raw.githubusercontent.com/NotQuiteIdeal/NotQuiteIdeal.github.io/main/monkey.png" alt="Cheese Image">
-        </div>
-    </div>
-
-    <!-- RSVP Section (hidden by default) -->
-    <div class="rsvp hidden" id="rsvp">
-        <h2>RSVP to this dumbass's wedding</h2>
-        <a href="https://www.zola.com/wedding/eveanddanny" target="_blank" rel="noopener">
-            <img src="https://raw.githubusercontent.com/NotQuiteIdeal/NotQuiteIdeal.github.io/main/dannyass.png" alt="RSVP on Zola">
-        </a>
+        <div class="title">monkey</div>
     </div>
 
     <div id="audio-container"></div>
@@ -128,9 +87,6 @@
             // Show main madness
             document.getElementById("bg").classList.remove("hidden");
             document.getElementById("main").classList.remove("hidden");
-
-            // Show RSVP section
-            document.getElementById("rsvp").classList.remove("hidden");
 
             // Inject YouTube iframe to trigger autoplay audio
             const iframe = document.createElement("iframe");
